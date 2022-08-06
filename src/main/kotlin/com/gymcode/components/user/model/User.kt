@@ -50,7 +50,9 @@ data class UserDTO(
 @Serializable
 data class SignUpDTO(
     @Required
-    val
+    val email: String,
+    @Required
+    val password: String
 )
 
 class LocalDateTimeSerializer : KSerializer<LocalDateTime> {
